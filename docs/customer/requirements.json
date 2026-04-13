@@ -1,0 +1,365 @@
+{
+  "currentVersion": "v0.1",
+  "status": "draft",
+  "versions": [],
+  "current": {
+    "salesInput": {
+      "salesPerson": "",
+      "lastUpdated": "2026-04-13",
+      "overallAssessment": {
+        "customerIntent": "数字化升级需求明确，港股上市是强力触发因素",
+        "projectUrgency": "中等，6-12个月窗口期",
+        "budgetSituation": "千亿级营收企业，预算充足",
+        "competitionStatus": "华为是主要竞品关注对象",
+        "winProbability": "待评估",
+        "keyObstacles": ["需对接多个事业部", "港股合规要求可能提高采购门槛"],
+        "confidenceLevel": "低（冷启动推演）"
+      },
+      "keyPersons": [
+        { "name": "曹仁贤", "role": "董事长（最终决策）", "influence": "高" },
+        { "name": "郑桂标", "role": "联席总裁", "influence": "高" },
+        { "name": "赵为", "role": "CTO（技术拍板）", "influence": "高" }
+      ],
+      "realNeeds": {
+        "explicitNeeds": [],
+        "implicitNeeds": ["全球项目交付协同", "研发知识沉淀", "渠道管理数字化"],
+        "suspectedNeeds": ["应收/回款管理"]
+      },
+      "decisionFactors": {
+        "primaryFactor": "港股上市合规需求",
+        "secondaryFactors": ["降本增效", "全球运营协同"],
+        "dealBreakers": []
+      },
+      "notes": "冷启动阶段，基于档案推演",
+      "concerns": [],
+      "suggestions": []
+    },
+    "sources": {
+      "meetings": [],
+      "documents": [],
+      "communications": [],
+      "observations": []
+    },
+    "needs": [
+      {
+        "id": "REQ-001",
+        "category": "functional",
+        "title": "全球项目交付协同管理",
+        "description": "支持多国家、多基地、跨事业部的项目交付全流程协同，实现交付进度可视化、变更追溯和多方电子签收",
+        "priority": "must",
+        "confidence": "low",
+        "source": {
+          "type": "profile-inference",
+          "detail": "阳光电源在全球20+国家有项目交付，覆盖储能/光伏电站，跨国协调链条长；其交付管理痛点severity为高；全球90+对外投资企业的组织规模意味着跨地域协同是刚需",
+          "raw": null
+        },
+        "status": "active",
+        "module": "交付管理",
+        "relatedPainPoints": ["交付管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-002",
+        "category": "functional",
+        "title": "研发知识沉淀与共享平台",
+        "description": "构建研发知识库，支持光伏逆变器/储能系统等核心技术文档的沉淀、版本管理和智能检索，支撑7000+研发人员的知识共享与新人培养",
+        "priority": "must",
+        "confidence": "low",
+        "source": {
+          "type": "profile-inference",
+          "detail": "研发团队近7000人，核心依赖个人经验；版本迭代快，知识沉淀和复用效率有提升空间；技术研发专家角色明确存在知识管理诉求",
+          "raw": null
+        },
+        "status": "active",
+        "module": "知识管理",
+        "relatedPainPoints": ["知识管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-003",
+        "category": "functional",
+        "title": "渠道伙伴协同管理",
+        "description": "管理全球520+服务网点和数百家伙伴，实现渠道伙伴门户、协同任务分发、服务进度跟踪和渠道数据分析",
+        "priority": "should",
+        "confidence": "low",
+        "source": {
+          "type": "profile-inference",
+          "detail": "全球520+服务网点和数百家伙伴，渠道协同效率提升机会likelihood=高；客户管理pain point severity=中，渠道管理数字化是核心诉求之一",
+          "raw": null
+        },
+        "status": "active",
+        "module": "客户管理",
+        "relatedPainPoints": ["客户管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-004",
+        "category": "functional",
+        "title": "合同与应收管理",
+        "description": "管理B端大客户和渠道伙伴合同全生命周期，跟踪应收账款及票据状态，支撑294亿元应收的账期管理和回款跟踪",
+        "priority": "should",
+        "confidence": "low",
+        "source": {
+          "type": "profile-inference",
+          "detail": "应收账款及票据总额294亿元，坏账准备31亿元，账期管理和回款跟踪压力大；回款管理pain point severity=中；被列为suspected needs，需当面验证",
+          "raw": null
+        },
+        "status": "active",
+        "module": "合同/财务管理",
+        "relatedPainPoints": ["回款管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      },
+      {
+        "id": "REQ-005",
+        "category": "functional",
+        "title": "多语言多时区协同门户",
+        "description": "面向全球20+国家员工和伙伴的协同工作台，支持中英双语及多时区通知，覆盖合肥、南京、越南、印度、美国等海内外多基地",
+        "priority": "could",
+        "confidence": "low",
+        "source": {
+          "type": "profile-inference",
+          "detail": "阳光电源在全球20+国家运营，90+对外投资企业，多地多基地并行生产；全球化布局带来多语言、多时区、多币种支持是基础设施性需求",
+          "raw": null
+        },
+        "status": "active",
+        "module": "协同平台",
+        "relatedPainPoints": ["生产管理", "交付管理"],
+        "firstVersion": "v0.1",
+        "lastUpdated": "v0.1",
+        "history": []
+      }
+    ],
+    "users": [
+      {
+        "role": "研发项目经理",
+        "description": "负责光伏逆变器/储能系统研发项目，7000人研发团队代表",
+        "mainTasks": ["项目进度管理", "需求变更跟踪", "交付验收"]
+      },
+      {
+        "role": "解决方案/交付工程师",
+        "description": "负责全球项目交付协调，储能/光伏电站项目执行",
+        "mainTasks": ["项目计划制定", "多方协同", "进度汇报"]
+      },
+      {
+        "role": "海外销售/渠道管理",
+        "description": "负责国际能源客户和渠道伙伴管理",
+        "mainTasks": ["客户关系维护", "渠道协同", "销售跟进"]
+      },
+      {
+        "role": "技术研发专家",
+        "description": "资深研发人员，掌握核心技术知识",
+        "mainTasks": ["知识沉淀", "经验分享", "新人带教"]
+      }
+    ],
+    "scope": {
+      "inScope": [
+        "全球项目交付协同管理模块",
+        "研发知识沉淀与共享平台",
+        "渠道伙伴协同管理（含520+服务网点）",
+        "多语言协同工作台（中文+英文）",
+        "单一事业部试点实施"
+      ],
+      "outOfScope": [
+        "MES/APS生产排程系统",
+        "ERP替换或深度集成",
+        "iCarbon能碳平台迭代",
+        "AI能源管家系统开发",
+        "全集团一次性推广"
+      ],
+      "futureScope": [
+        "合同与应收管理扩展",
+        "多事业部全面推广",
+        "海外制造基地生产管理模块"
+      ],
+      "phases": [
+        {
+          "phase": 1,
+          "name": "试点验证",
+          "duration": "3-6个月",
+          "scope": "单一事业部，聚焦交付管理或知识管理核心场景",
+          "deliverable": "试点报告和ROI评估"
+        },
+        {
+          "phase": 2,
+          "name": "扩大推广",
+          "duration": "6-9个月",
+          "scope": "多事业部扩展，增加渠道管理模块",
+          "deliverable": "全集团版本上线"
+        },
+        {
+          "phase": 3,
+          "name": "深化与扩展",
+          "duration": "6-12个月",
+          "scope": "增加财务管理模块，接入海外基地",
+          "deliverable": "全球统一协同平台"
+        }
+      ],
+      "priorityMatrix": [
+        {
+          "dimension1": "业务价值",
+          "dimension2": "实施复杂度",
+          "highValueHighComplexity": ["合同与应收管理"],
+          "highValueLowComplexity": ["交付协同", "知识管理平台"],
+          "lowValueHighComplexity": ["多语言协同门户"],
+          "lowValueLowComplexity": ["渠道伙伴管理"]
+        }
+      ]
+    },
+    "constraints": {
+      "budget": {
+        "total": "",
+        "flexibility": ""
+      },
+      "timeline": {
+        "expectedStart": "",
+        "expectedGoLive": ""
+      }
+    },
+    "successCriteria": {
+      "交付管理": [
+        "试点项目交付进度可视化覆盖率达80%以上",
+        "跨部门/跨基地协同任务平均响应时间缩短30%"
+      ],
+      "知识管理": [
+        "核心研发文档沉淀量达500+篇",
+        "研发新人独立查阅知识库解决问题占比达40%以上"
+      ],
+      "渠道管理": [
+        "渠道伙伴活跃使用率达70%以上",
+        "渠道工单处理平均时长缩短25%"
+      ],
+      "财务": [
+        "应收账款到期提醒覆盖率100%",
+        "回款流程自动化节点减少人工操作50%"
+      ]
+    },
+    "risksAndAssumptions": {
+      "risks": [
+        { "description": "多事业部格局可能导致需求协调困难", "impact": "高", "mitigation": "先聚焦单一事业部试点" },
+        { "description": "港股上市带来更严格合规要求，可能影响采购流程", "impact": "中", "mitigation": "关注上市时间节点，加快推进" },
+        { "description": "华为等竞品已在能源行业深耕，替换或竞争门槛较高", "impact": "中", "mitigation": "突出轻量化切入和交付管理场景差异化" }
+      ],
+      "assumptions": [
+        { "description": "假设港股上市前是最佳切入窗口", "impact": "高" },
+        { "description": "假设知识管理和交付管理是其当前优先级最高的痛点", "impact": "中" },
+        { "description": "假设单一事业部试点模式可被客户接受", "impact": "中" }
+      ],
+      "dependencies": [
+        { "description": "依赖客户明确试点事业部和关键对接人", "impact": "高" },
+        { "description": "依赖与客户现有IT系统（如OA、ERP）的接口对接可行性评估", "impact": "中" }
+      ]
+    },
+    "solutionDirection": {
+      "overallApproach": "轻量化专业模块切入，非大换血式ERP",
+      "recommendedApproach": "以「全球项目交付协同平台」作为敲门砖，同时捆绑「研发知识管理平台」，双模块联动形成协同效应；以SaaS部署优先，支持多语言多时区，兼顾国内合肥/南京基地与海外越南/印度/美国基地；分阶段实施，第一阶段聚焦单一事业部试点验证ROI",
+      "technicalDirection": "SaaS优先，支持多语言（中文/英文）、多时区、多币种；开放API与客户现有IT系统（OA、ERP）对接；移动端优先适配海外出差场景",
+      "implementationStrategy": "POC试点（3个月）→ 单一事业部推广（6个月）→ 全集团扩展（12个月）；建议从储能事业部或解决方案事业部切入，该事业部交付管理痛点最直接",
+      "nextSteps": [
+        "预约储能/解决方案事业部IT或运营负责人，介绍交付协同方案",
+        "针对7000人研发团队安排知识管理平台演示",
+        "以港股上市合规为契机，探讨合同电子签和应收管理需求",
+        "获取试点机会：选择1-2个典型全球项目进行POC验证"
+      ]
+    },
+    "pendingQuestions": [
+      {
+        "id": "PQ-001",
+        "category": "预算",
+        "priority": "必问",
+        "stage": "screening",
+        "question": "贵司在数字化协同/知识管理类工具上的年度预算大概是什么量级？",
+        "purpose": "判断购买力和决策时机",
+        "expectedDirection": "希望了解预算量级和采购方式（年度订阅 vs 项目制）",
+        "targetPerson": "IT负责人或业务负责人",
+        "relatedNeedIds": ["REQ-001", "REQ-002", "REQ-003"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-002",
+        "category": "需求确认",
+        "priority": "必问",
+        "stage": "screening",
+        "question": "贵司目前交付协同主要用哪些工具？遇到的最大痛点是需求变更频繁还是进度不透明？",
+        "purpose": "确认REQ-001的核心痛点方向，调整方案重点",
+        "expectedDirection": "验证交付管理是must-have，聚焦变更管理还是进度可视化",
+        "targetPerson": "解决方案/交付工程师",
+        "relatedNeedIds": ["REQ-001"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-003",
+        "category": "需求确认",
+        "priority": "建议问",
+        "stage": "screening",
+        "question": "贵司研发知识目前用什么方式管理？是否有尝试过知识库但效果不好？",
+        "purpose": "了解知识管理现状，评估切入难度",
+        "expectedDirection": "判断现有工具使用情况和迁移意愿",
+        "targetPerson": "CTO办公室或研发管理部",
+        "relatedNeedIds": ["REQ-002"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-004",
+        "category": "决策链",
+        "priority": "建议问",
+        "stage": "deep-dive",
+        "question": "如果推进数字化项目，通常需要哪些部门参与评估和审批？",
+        "purpose": "确认决策链，提前识别关键影响人",
+        "expectedDirection": "了解IT、采购、业务部门各自角色",
+        "targetPerson": "IT负责人或项目对接人",
+        "relatedNeedIds": ["REQ-001", "REQ-002", "REQ-003"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      },
+      {
+        "id": "PQ-005",
+        "category": "竞品/选型",
+        "priority": "可选",
+        "stage": "screening",
+        "question": "贵司目前有用哪些协同或知识管理工具（如钉钉、飞书、Confluence等）？对现有工具哪些方面最不满意？",
+        "purpose": "了解现有工具使用情况和迁移摩擦点",
+        "expectedDirection": "判断是增量采购还是替换方案",
+        "targetPerson": "IT负责人",
+        "relatedNeedIds": ["REQ-001", "REQ-002"],
+        "status": "pending",
+        "answer": null,
+        "resolvedInVersion": null
+      }
+    ],
+    "completionRate": {
+      "overall": 22,
+      "byCategory": {
+        "salesInput": 50,
+        "needs": 60,
+        "users": 70,
+        "scope": 70,
+        "constraints": 10,
+        "successCriteria": 60,
+        "risksAndAssumptions": 80,
+        "solutionDirection": 90,
+        "pendingQuestions": 100
+      },
+      "blockers": [
+        "预算信息缺失（constraints.total为空）",
+        "时间线信息缺失（constraints.timeline为空）",
+        "REQ-001交付管理：must-have但confidence=low，缺少客户当面验证",
+        "REQ-002知识管理：must-have但confidence=low，缺少客户当面验证"
+      ]
+    }
+  }
+}
